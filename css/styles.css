@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+}
+
+.container-center {
+  width: 90%;
+  max-width: 1170px;
+  margin-inline: auto;
+}
+
+.text-primary {
+  color: #ff5400;
+}
+
+.bg-primary {
+  background-color: #ff5400;
+}
+
+.btn-primary {
+  padding: 14px 35px;
+  background-color: #ff5400;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-block: 20px;
+}
+@media screen and (min-width: 600px) {
+  header nav {
+    padding-block: 60px;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header nav {
+    flex-direction: row;
+  }
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+  color: #131318;
+  font-size: 21.543px;
+  font-weight: 800;
+}
+@media screen and (min-width: 600px) {
+  header nav .logo {
+    font-size: 36px;
+  }
+}
+header nav .logo img {
+  width: 28px;
+  margin-right: 15px;
+}
+@media screen and (min-width: 600px) {
+  header nav .logo img {
+    width: 48px;
+  }
+}
+header nav .menu {
+  font-size: 20px;
+}
+@media screen and (min-width: 600px) {
+  header nav .menu {
+    display: none;
+  }
+}
+header nav ul {
+  display: none;
+}
+header nav ul a {
+  color: #424247;
+}
+@media screen and (min-width: 600px) {
+  header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=styles.css.map */
