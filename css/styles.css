@@ -1,3 +1,5 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 * {
   margin: 0;
@@ -59,11 +61,11 @@ header nav {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding-block: 20px;
+  padding-block: 30px;
 }
 @media screen and (min-width: 600px) {
   header nav {
-    padding-block: 60px;
+    padding-block: 40px;
     flex-direction: column;
     gap: 40px;
   }
@@ -122,7 +124,12 @@ header .banner {
   text-align: center;
   min-height: 500px;
   border-radius: 16px;
-  background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%), url("../Images/Group 13 (1) (1).png");
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/Group 13 (1) (1).png");
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -164,8 +171,6 @@ header .banner .banner-content .buttons select {
   padding: 14px;
   border-radius: 8px;
   font-size: 16px;
-  padding-right: 15px;
-  text-indent: 5px;
 }
 
 .popular-tours-section {
@@ -231,4 +236,358 @@ header .banner .banner-content .buttons select {
   .destination-section p {
     padding-block: 40px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.destination-img-grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media screen and (min-width: 600px) {
+  .destination-img-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .destination-img-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.destination-img-grid div {
+  border-radius: 16px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .destination-img-grid div {
+    min-height: 300px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .destination-img-grid div {
+    min-height: 250px;
+  }
+}
+
+.maldives {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 5.png") no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .maldives {
+    grid-column: 1 / span 6;
+  }
+}
+
+.indonesia {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 6.png") no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .indonesia {
+    grid-column: 7 / span 14;
+  }
+}
+
+.srilanka {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 7.png") no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .srilanka {
+    grid-column: 1 / span 3;
+  }
+}
+
+.north-america {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 8.png") no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .north-america {
+    grid-column: 4 / span 5;
+  }
+}
+
+.kashmir {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 8\ \(1\).png") no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .kashmir {
+    grid-column: 9 / span 12;
+  }
+}
+
+.bangladesh {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 9.png") no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 992px) {
+  .bangladesh {
+    grid-column: 1 / span 6;
+  }
+}
+
+.bandarban {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 10.png") no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .bandarban {
+    grid-column: 7 / span 14;
+  }
+}
+
+.choose-us-section {
+  padding-block: 50px;
+}
+
+@media screen and (min-width: 600px) {
+  .choose-us-section {
+    padding-block: 75px;
+  }
+}
+
+.choose-us-section > h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.choose-us-section > p {
+  text-align: center;
+  padding-block: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .choose-us-section > h1 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+}
+
+.choose-us-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (min-width: 600px) {
+  .choose-us-content-wrapper {
+    gap: 24px;
+    padding-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .choose-us-content-wrapper {
+    display: flex;
+    gap: 24px;
+    padding-top: 48px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.choose-us-content-wrapper h3 {
+  font-size: 20px;
+  font-weight: 800;
+  padding-block: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .choose-us-content-wrapper h3 {
+    font-size: 24px;
+  }
+}
+
+.choose-us-content-wrapper i {
+  font-size: 40px;
+  color: #ff5400;
+}
+
+.choose-us-content-wrapper .content {
+  padding: 32px;
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .choose-us-content-wrapper .content {
+    width: 40%;
+  }
+}
+
+.choose-us-content-wrapper .content-one {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+
+.choose-us-content-wrapper .content-two {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+
+.choose-us-content-wrapper .content-three {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+
+/* news letter section stylings */
+.newsletter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media screen and (min-width: 992px) {
+  .newsletter-section {
+    flex-direction: row;
+  }
+}
+
+.newsletter-section-content {
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  padding: 20px;
+}
+@media screen and (min-width: 600px) {
+  .newsletter-section-content {
+    padding: 40px;
+  }
+}
+.newsletter-section-content h3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.newsletter-section-content p {
+  padding-block: 16px;
+}
+
+.newsletter-section-content form {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.newsletter-section-content form input {
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  padding: 16px 20px;
+}
+
+.newsletter-section-img {
+  background-image: url("../Images/Rectangle\ 8\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  flex-grow: 1;
+  position: relative;
+}
+
+.newsletter-section-img button {
+  position: absolute;
+  bottom: 35px;
+  right: 5px;
+  rotate: -20deg;
+}
+
+.newsletter-section-img h3 {
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 600px) {
+  .newsletter-section-img {
+    min-height: 400px;
+  }
+}
+/* end of news letter section stylings */
+
+/* footer stylings */
+footer {
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px 10px;
+  background: rgba(19, 19, 24, 0.05);
+  display: grid;
+  gap: 20px;
+}
+
+footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding-bottom: 35px;
+  gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    margin-top: 45px;
+    padding: 50px;
+  }
+}
+/*end of footer stylings */
