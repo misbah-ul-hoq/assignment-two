@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Earth Explorer</title>
     <!-- css link -->
     <link rel="stylesheet" href="css/styles.css" />
     <!-- font awesome cdn link -->
@@ -13,6 +13,7 @@
     ></script>
   </head>
   <body>
+    <!-- header starts -->
     <header class="container-center">
       <nav>
         <a href="" class="logo">
@@ -28,7 +29,56 @@
         </ul>
         <i class="fa-solid fa-bars menu"></i>
       </nav>
-      <div class="banner"></div>
+      <div class="banner">
+        <div class="banner-content">
+          <h1>Explore Your travel</h1>
+          <p>
+            Visting different parts of the world is really amazing.Hava a chance
+          </p>
+          <div class="buttons">
+            <input type="text" placeholder="Where go" />
+
+            <select name="" id="">
+              <option value="" selected>When</option>
+              <option value="">Saturday</option>
+              <option value="">Sunday</option>
+              <option value="">Monday</option>
+            </select>
+
+            <select name="" id="">
+              <option value="">Select Type</option>
+              <option value="">Single Tour</option>
+              <option value="">Duo Tour</option>
+              <option value="">Family Tour</option>
+            </select>
+            <button class="btn-primary">
+              <i class="fa-solid fa-magnifying-glass"></i> Find Now
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
+    <!-- header ends -->
+
+    <!-- popular tours section starts -->
+    <section class="popular-tours-section container-center">
+      <div class="content-left popular-tours-content">
+        <h1>Our Popular Tours</h1>
+        <p class="text-gray">
+          Here is a list of the tours that were liked most by the users
+        </p>
+        <ul class="text-gray">
+          <li>Tour to Cox's Bazar in a family package is a great choice</li>
+          <li>Having a tour in Sundarban with friends is a must to have</li>
+          <li>Indonesia is a great place to visit</li>
+        </ul>
+        <p class="text-gray">The above items are the top rated items</p>
+        <button class="btn-primary">Read More</button>
+      </div>
+      <div class="content-right popular-tours-img">
+        <img src="Images/Rectangle 4.png" alt="" />
+      </div>
+    </section>
+    <!-- popular tours section ends -->
   </body>
 </html>

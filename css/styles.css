@@ -6,9 +6,27 @@
   text-decoration: none;
 }
 
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  color: #131318;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .container-center {
@@ -21,6 +39,10 @@ body {
   color: #ff5400;
 }
 
+.text-gray {
+  color: #5a5a5d;
+}
+
 .bg-primary {
   background-color: #ff5400;
 }
@@ -29,6 +51,7 @@ body {
   padding: 14px 35px;
   background-color: #ff5400;
   color: white;
+  border-radius: 8px;
 }
 
 header nav {
@@ -92,4 +115,100 @@ header nav ul a {
     gap: 30px;
     font-size: 18px;
   }
+}
+header .banner {
+  padding-inline: 15px;
+  color: white;
+  text-align: center;
+  min-height: 500px;
+  border-radius: 16px;
+  background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%), url("../Images/Group 13 (1) (1).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .banner .banner-content h1 {
+  font-size: 22px;
+  font-weight: 800;
+}
+@media screen and (min-width: 600px) {
+  header .banner .banner-content h1 {
+    font-size: 50px;
+  }
+}
+header .banner .banner-content p {
+  padding-block: 25px;
+  line-height: 21px; /* 150% */
+}
+header .banner .banner-content .buttons {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  display: grid;
+  gap: 16px;
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  header .banner .banner-content .buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  header .banner .banner-content .buttons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+header .banner .banner-content .buttons input,
+header .banner .banner-content .buttons select {
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  padding-right: 15px;
+  text-indent: 5px;
+}
+
+.popular-tours-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-block: 50px;
+}
+@media screen and (min-width: 600px) {
+  .popular-tours-section {
+    padding-block: 75px;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+}
+.popular-tours-section .popular-tours-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 600px) {
+  .popular-tours-section .popular-tours-content {
+    gap: 30px;
+  }
+}
+.popular-tours-section .popular-tours-content h1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+.popular-tours-section .popular-tours-content p {
+  line-height: 24px;
+}
+.popular-tours-section .popular-tours-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 15px;
+}
+.popular-tours-section .popular-tours-content ul li {
+  line-height: 24px;
+  list-style-type: disc;
+}
+.popular-tours-section .popular-tours-content button {
+  align-self: flex-start;
 }/*# sourceMappingURL=styles.css.map */
