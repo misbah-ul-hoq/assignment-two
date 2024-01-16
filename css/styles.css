@@ -527,6 +527,37 @@ video {
 
 /* end of video section stylings */
 
+/* review section stylings --- optional section */
+.review-section > h2 {
+  font-weight: 800;
+  font-size: 30px;
+}
+.reviews-wrapper {
+  margin-top: 30px;
+  display: grid;
+  gap: 25px;
+}
+
+.review-section .review {
+  display: flex;
+  gap: 20px;
+  align-content: center;
+}
+.review-section .review img {
+  display: block;
+  height: 64px;
+  width: 64px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+@media screen and (min-width: 600px) {
+  .reviews-wrapper {
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* end of review section stylings --- optional section */
+
 /* news letter section stylings */
 .newsletter-section {
   display: flex;
@@ -634,6 +665,11 @@ video {
   flex-direction: column;
   justify-content: flex-end;
   gap: 16px;
+}
+
+.tour-pricing-section-content-wrapper button {
+  display: block;
+  margin: 20px auto;
 }
 
 .tour-pricing-section-content-wrapper .content > div .top-content {
